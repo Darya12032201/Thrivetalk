@@ -19,19 +19,57 @@
     font-style: normal;
 }
 
+@keyframes navigation-link-border-animation {
+    0% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: #22356F;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
-body{
-    width: 100vw;
-    overflow-x: hidden;
+.main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.yellow-background{
+    position: absolute;
+    width: 78%;
+    height: 840px;
+    top: 0;
+    left: 0;
+    background: #F4F9E2;
+    z-index: -1;
+}
+
+.decorative-figure{
+    position: absolute;
+    width: 678px;
+    height: 774px;
+    top: -55px;
+    right: 50px;
+}
+
+.main-image{
+    position: absolute;
+    width: 1060px;
+    height: 845px;
+    top: -53px;
+    right: -230px;
+    background: url(images/home-img.jpg) center/contain no-repeat;
+    clip-path: path('M 835.727 235.963 C 760.488 105.644 593.85 60.9937 463.531 136.233 L 235.962 267.62 C 105.644 342.86 60.9933 509.498 136.233 639.816 V 639.816 C 211.472 770.135 378.11 814.785 508.429 739.546 L 735.998 608.159 C 866.317 532.919 910.967 366.281 835.727 235.963 V 235.963 Z');
 }
 
 .header{
     display: flex;
-    position: fixed;
+    position: absolute;
     width: 80%;
     top: 27px;
     left: 10%;
@@ -59,10 +97,19 @@ body{
 }
 
 .navigation-link{
+    display: inline-block;
     font-size: 14px;
     line-height: 30px;
     text-decoration: none;
     color: #22356F;
+    border-bottom: 1px solid transparent;
+}
+
+.navigation-link:hover{
+    border-color: #22356F;
+    animation-name: navigation-link-border-animation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
 }
 
 .button{
@@ -77,21 +124,16 @@ body{
     font-family: Larsseit_bold, sans-serif;
     color: #FFF;
     background: #62D0DF;
+    transition: all 0.5s linear;
+}
+
+.button:hover{
+    color: #62D0DF;
+    background: #FFF;
 }
 
 .home{
-    position: relative;
     padding: 241px 10% 75px;
-}
-
-.yellow-background{
-    position: absolute;
-    width: 78%;
-    height: 840px;
-    top: 0;
-    left: 0;
-    background: #F4F9E2;
-    z-index: -1;
 }
 
 .logo-home{
@@ -143,27 +185,4 @@ body{
 .home-link:hover{
     background: #F9B640;
     color: #fff;
-}
-
-.decorative-rectagle{
-    position: absolute;
-    width: 808px;
-    height: 545px;
-    top: -171px;
-    left: 736px;
-    transform: rotate(-120deg);
-    border-radius: 312px;
-    background: #EDFDFF;
-    z-index: -1;
-}
-
-.home-image{
-    position: absolute;
-    width: 972px;
-    height: 876px;
-    top: -53px;
-    left: 698px;
-    background: url(images/home-img.jpg) center/contain no-repeat;
-    clip-path: path("M 836.708 183.393 C 761.468 53.0743 594.83 8.42385 464.512 83.6634 L 236.943 215.05 C 106.624 290.29 61.9738 456.928 137.213 587.246 C 212.453 717.565 379.091 762.215 509.409 686.976 L 736.978 555.589 C 867.297 480.35 911.947 313.712 836.708 183.393 Z");
-    z-index: -1;
 }
