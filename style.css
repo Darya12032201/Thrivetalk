@@ -227,3 +227,106 @@
     height: auto;
     background: url(images/why-img.jpg) center/cover no-repeat;
 }
+
+.about-us{
+    width: 100%;
+}
+
+.about-text-container{
+    display: flex;
+    width: 100%;
+    padding: 150px 30% 52px 8%;
+}
+
+.about-heading{
+    width: 93px;
+    height: 210px;
+    margin-top: 6px;
+    font-family: Larsseit_regular, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #22356F;
+    letter-spacing: 0.96px;
+}
+
+.about-text{
+    width: 592px;
+    height: 210px;
+    margin-left: 16%;
+    font-family: Larsseit_medium, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #22356F;
+    letter-spacing: 0.12px;
+}
+
+.about-help-heading{
+    width: 201px;
+    height: 21px;
+    margin: 18px auto 24px;
+    font-family: Larsseit_regular, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(34, 53, 111, 0.50);
+    letter-spacing: 0.96px;
+}
+
+.about-help-cards{
+    display: flex;
+    width: 100%;
+}
+
+.about-help-card{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pink{
+    background-color: #FFE2DE;
+}
+
+.green{
+    background-color: #C4E769;
+}
+
+.blue{
+    background-color: #62D0DF;
+}
+
+.darkblue{
+    background-color: #0052C1;
+}
+
+.card-line{
+    width: 255px;
+    height: 72px;
+    box-shadow: 0px -1px 0px 0px #FFF inset;
+}
+
+.card-text-container{
+    display: flex;
+    margin-top: 23px;
+    margin-left: 4%;
+    padding-bottom: 211px;
+}
+
+.card-checkbox{
+    width: 9px;
+    height: 9px;
+    margin-top: 13px;
+    border-radius: 50%;
+    background-color: #E9B730;
+}
+
+.card-text{
+    width: 233px;
+    height: 64px;
+    margin-left: 15px;
+    font-family: larsseit_bold, sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+    letter-spacing: -0.192px;
+}
