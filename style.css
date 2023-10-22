@@ -274,6 +274,7 @@
 .about-help-cards{
     display: flex;
     width: 100%;
+    margin-bottom: 120px;
 }
 
 .about-help-card{
@@ -299,20 +300,20 @@
     background-color: #0052C1;
 }
 
-.card-line{
-    width: 255px;
+.about-help-card .card-line{
+    width: 70%;
     height: 72px;
     box-shadow: 0px -1px 0px 0px #FFF inset;
 }
 
-.card-text-container{
+.about-help-card .card-text-container{
     display: flex;
     margin-top: 23px;
     margin-left: 4%;
     padding-bottom: 211px;
 }
 
-.card-checkbox{
+.about-help-card .card-checkbox{
     width: 9px;
     height: 9px;
     margin-top: 13px;
@@ -320,10 +321,70 @@
     background-color: #E9B730;
 }
 
-.card-text{
+.about-help-card .card-text{
     width: 233px;
     height: 64px;
     margin-left: 15px;
+    font-family: larsseit_bold, sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+    letter-spacing: -0.192px;
+}
+
+.services-cads{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.services-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deepblue{
+    background: #22356F;
+}
+
+.card-image{
+    background: url(images/services-img.jpg) center/cover no-repeat;
+}
+
+.lilac{
+    background: #DEE1FF;
+}
+
+.purple{
+    background: #8F00FF;
+}
+
+.services-card .card-line{
+    width: 70%;
+    height: 96px;
+    box-shadow: 0px -1px 0px 0px #FFF inset;
+}
+
+.services-card .card-text-container{
+    display: flex;
+    margin-top: 30px;
+    padding-bottom: 282px;
+    justify-content: flex-start;
+}
+
+.services-card .card-checkbox{
+    width: 12px;
+    height: 12px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: #E9B730;
+}
+
+.services-card .card-text{
+    width: 206px;
+    height: 72px;
+    margin-left: 20px;
     font-family: larsseit_bold, sans-serif;
     font-size: 32px;
     line-height: 32px;
