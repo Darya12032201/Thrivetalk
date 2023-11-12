@@ -31,6 +31,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a{
@@ -320,7 +321,7 @@ a{
     letter-spacing: -0.192px;
 }
 
-.services-cads{
+.services-cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -380,12 +381,6 @@ a{
     letter-spacing: -0.192px;
 }
 
-.services-cads{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-}
-
 .servic{
     display: flex;
     width: 100%;
@@ -432,7 +427,7 @@ a{
 
 .blog-image{
     width: 34%;
-    height: 800px;
+    height: auto;
     background: url(images/information-image.jpg) center/cover no-repeat;
 }
 
@@ -548,7 +543,7 @@ a{
 
 .contact-image{
     width: 34%;
-    height: 826px;
+    height: auto;
     background: url(images/contact-image.jpg) center/cover no-repeat;
 }
 
@@ -559,7 +554,7 @@ a{
 
 .info-image{
     width: 40%;
-    height: 380px;
+    height: auto;
     background: url(images/info-image.jpg) center/cover no-repeat;
 }
 
@@ -574,6 +569,7 @@ a{
 .info-card{
     display: flex;
     width: 33%;
+    padding-bottom: 180px;
     flex-direction: column;
 }
 
@@ -639,7 +635,6 @@ a{
 }
 
 .copyright-text{
-    width: 351px;
     margin-left: 6px;
     font-family: Larsseit_bold,sans-serif;
     font-size: 14px;
@@ -648,7 +643,7 @@ a{
     letter-spacing: -0.084px;
 }
 
-@media screen and (min-width:1024px) and (max-width:1440px) {
+@media (max-width:1440px) {
     .decorative-figure, .main-image{
         display: none;
     }
@@ -736,15 +731,7 @@ a{
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-    .decorative-figure, .main-image{
-        display: none;
-    }
-
-    .yellow-background{
-        width: 100%;
-    }
-
+@media (max-width:1023px) {
     .button{
         display: none;
     }
@@ -777,10 +764,7 @@ a{
     }
 
     .home-text{
-        width: 100%;
         margin-top: 75px;
-        font-size: 33px;
-        line-height: 33px;
         text-align: center;
     }
 
@@ -793,7 +777,160 @@ a{
 
     .home-link{
         margin-right: 0;
+    }
+
+    .why-text-container{
+        padding: 100px 50px;
+    }
+
+    .why-text{
+        width: 100%;
+    }
+
+    .about-text-container{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 90px 155px;
+    }
+
+    .about-heading{
+        width: 100%;
+        margin-top: 0;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .about-text{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .about-help-heading{
+        width: 100%;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;    
+    }
+
+    .about-help-cards{
+        flex-wrap: wrap;
+    }
+
+    .about-help-card{
+        width: 50%;
+    }
+
+    .about-help-card .card-text-container{
+        margin-top: 50px;
+        margin-left: 0;
+        padding-bottom: 150px;
+    }
+
+    .about-help-card .card-text{
+        width: 100%;
+    }
+
+    .services-cards{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .services-card .card-text-container{
+        width: 70%;
+        margin-top: 50px;
+        padding-bottom: 155px;
+    }
+
+    .services-card .card-text{
+        width: 100%;
+    }
+
+    .services-servic{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .servic-card{
+        padding: 50px 90px;
+    }
+
+    .servic-text{
         font-size: 24px;
         line-height: 24px;
     }
+
+    .blog-container{
+        padding: 90px;
+    }
+
+    .blog-heading{
+        width: 100%;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .blog-text{
+        margin-top: 150px;
+    }
+
+    .blog-button{
+        margin-top: 100px;
+    }
+
+    .contact-container{
+        padding: 90px;
+    }
+
+    .contact-small-heading{
+        width: 100%;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .contact-heading{
+        margin-top: 180px;
+    }
+
+    .contact-text{
+        margin-top: 50px;
+    }
+
+    .contact-button{
+        margin-top: 80px;
+    }
+
+    .info-container{
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+
+    .info-card{
+        width: 50%;
+        padding-bottom: 40px;
+        padding-right: 30px;
+    }
+
+    .info-heading{
+        width: 100%;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .info-text, .info-phone, .info-mail{
+        width: 100%;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .copyright-container{
+        margin: auto auto;
+    }
+}
+
+@media (max-width:767px) {
+    
 }
