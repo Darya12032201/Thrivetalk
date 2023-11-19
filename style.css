@@ -932,5 +932,263 @@ a{
 }
 
 @media (max-width:767px) {
+    .header{
+        width: 100%;
+        top: 15px;
+        left: 1%;
+    }
+
+    .logo-header{
+        display: none;
+    }
+
+    .navigation{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navigation-link{
+        margin: 0;
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .home{
+        padding: 90px 5%;
+    }
+
+    .logo-home{
+        display: block;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .home-heading{
+        margin-top: 16px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .home-text{
+        margin-top: 32px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .home-link{
+        margin-top: 32px;
+        padding: 5px 15px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .why-thrive{
+        flex-direction: column;
+    }
+
+    .why-text-container{
+        width: 100%;
+        padding: 90px 5%;
+    }
+
+    .why-heading{
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .why-text{
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    .why-image{
+        width: 100%;
+        height: 100vh;
+        background-position: 22% center;
+    }
+
+    .about-text-container{
+        padding: 90px 5%;
+    }
+
+    .about-heading{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .about-text{
+        margin-top: 32px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .about-help-heading{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .about-help-cards{
+        margin-bottom: 90px;
+    }
+
+    .about-help-card{
+        width: 100%;
+    }
+
+    .about-help-card .card-line{
+        width: 75%;
+    }
+
+    .about-help-card .card-text-container{
+        margin-top: 32px;
+        padding: 0 12.5% 150px;
+    }
+
+    .about-help-card .card-text{
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .about-help-card .card-checkbox{
+        margin-top: 8px;
+    }
+
+    .services-cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        margin-bottom: 45px;
+    }
+
+    .services-card .card-line{
+        width: 75%;
+        height: 40px;
+    }
+
+    .services-card .card-text-container{
+        width: 75%;
+        margin-top: 32px;
+        padding-bottom: 150px;
+        justify-content: center;
+    }
+
+    .services-card .card-text{
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .services-card .card-checkbox{
+        margin-top: 5px;
+    }
+
+    .services-servic{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        margin-top: 45px;
+    }
+
+    .servic-card{
+        padding: 90px 5%;
+    }
     
+    .blog{
+        flex-direction: column;
+    }
+
+    .blog-image{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .blog-container{
+        width: 100%;
+        padding: 90px 5%;
+    }
+
+    .blog-heading{
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .blog-text{
+        margin-top: 32px;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .blog-button{
+        margin: 45px auto 0;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact-container{
+        width: 100%;
+        padding: 90px 5%;
+    }
+
+    .contact-small-heading{
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .contact-heading{
+        margin-top: 64px;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .contact-text{
+        margin-top: 32px;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .contact-button{
+        margin: 45px auto 0;
+    }
+
+    .contact-image{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .info{
+        flex-direction: column-reverse;
+    }
+
+    .info-image{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .info-container{
+        width: 100%;
+        padding: 90px 5%;
+    }
+
+    .info-card{
+        width: 100%;
+        padding: 0 0 32px;
+    }
+
+    .info-heading{
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .info-text, .info-phone, .info-mail{
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
 }
